@@ -1,0 +1,2138 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+
+
+body {
+	background:#fff !important;
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	line-height:1.4;
+}
+
+/*reinitialisation du template*/
+.layout-main {
+	width:100%;
+}
+
+#main-wrapper, .main-content-accueil{
+
+	width: 100%;
+	max-width: inherit;
+	display: inline-block;
+
+}
+
+.block .content{
+	margin-top:0;
+}
+
+
+.ligne{
+	max-width:1400px;
+	display:flex;
+	justify-content: space-between;
+	margin:0 auto;
+	flex-wrap: wrap;
+	padding:0 15px;
+	
+}
+
+.ligne .ligne {
+	padding:0;
+	max-width:initial;
+}
+
+.main-content .section{
+	padding:0;
+}
+
+article {
+	width:100%;
+}
+
+/* general */
+.region-interventions ul li p,
+.region-interventions ul li,
+.region-interventions h3,
+a {
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+a, a:link {
+	border:none;
+}
+a:focus {
+	outline:none;
+}
+a:hover {
+	border:none;
+	color:#191960;
+}
+
+.main-content p {
+	
+}
+
+.main-content h1 {
+
+}
+
+.main-content h2 {
+
+}
+
+.main-content h3 {
+
+}
+
+
+/*Grille*/
+
+.droite{
+	justify-content: flex-end;
+}
+
+.gauche{
+	justify-content: flex-start;
+}
+
+.pleine_largeur{
+	max-width: inherit;
+}
+
+.colonne_1-1{
+	width:100%;
+}
+
+.colonne_1-2{
+	width:47.22%;
+}
+
+.colonne_1-3{
+	width:29.63%;
+}
+
+.colonne_2-3{
+	width:64.81%;
+}
+
+.colonne_1-4{
+	width:20.83%;
+}
+.colonne_3-4{
+	width:73.61%;
+}
+
+.colonne_1-5{
+	width:16.25%;
+}
+.colonne_2-5{
+	width:37.19%;
+}
+
+.colonne_3-5{
+	width:53.44%;
+}
+
+.colonne_4-5{
+	width:79.06%;
+}
+
+.flex {
+	display:flex;
+}
+
+.margin {
+	margin:auto;
+}
+
+.grille {
+	display: grid;
+	grid-template-columns: 1fr repeat(12, minmax(5px, 110px)) 1fr;
+	grid-gap: 5px;
+	width: 100%;
+}
+
+.fin{
+	margin-right:0;
+}
+/*colonne fin*/
+
+/*---------- RGPD --------------*/
+#sliding-popup.sliding-popup-top{
+	background: #5d5c5c;
+}
+
+#sliding-popup .popup-content{
+	display: flex;
+    padding: 7px 0;
+}
+
+#sliding-popup .popup-content #popup-text{
+	margin: auto 20px auto 0;
+	max-width: initial;
+	text-align: center;
+}
+#sliding-popup .popup-content #popup-buttons{
+	margin: auto 0;
+	min-width: 180px;
+}
+
+#sliding-popup .popup-content #popup-buttons button{
+	margin: auto 10px;
+    border: 1px solid #fff;
+    padding: 5px 16px;
+    border-radius: 0;
+    background: #fff;
+    color: #2f2f2f!important;
+    font-weight: 700;
+    font-size: 13px;
+}
+#sliding-popup .popup-content #popup-buttons button:hover{
+	background:transparent;
+	color:#fff!important;
+	text-shadow: none;
+	box-shadow: none;
+}
+/*----------RGPD fin-----------*/
+
+/*---------- Effets --------------*/
+[type-animation="fondu"] {
+	opacity: 0;
+}
+
+[type-animation="zoom"] {
+	opacity: 0;
+	transform: scale(0.6);
+}
+
+[type-animation="spirale"] {
+	opacity: 0;
+	transform-origin: top left;
+	transform: rotate(145deg);
+}
+
+[type-animation="bas_haut"] {
+	transform: translate(0px, 100px);
+	opacity: 0;
+}
+
+[type-animation="haut_bas"] {
+	transform: translate(0px, -100px);
+	opacity: 0;
+}
+
+[type-animation="gauche_droite"] {
+	transform: translate(-100px, 0);
+	opacity: 0;
+}
+
+[type-animation="droite_gauche"] {
+	opacity: 0;
+	transform: translate(100px, 0);
+}
+
+.animated {
+	transition-delay : 300ms;
+	transition-duration : 1600ms;
+	opacity: 1;
+	transform: none;
+}
+
+/* --Siperfish modif --*/
+
+ul#superfish-main {
+    width: auto;
+    display: flex;
+	float:right;
+    justify-content: space-between;
+	font-size: 1.1em;
+}
+
+ul#superfish-main li {
+	background:none;
+}
+
+ul#superfish-main li a, ul#superfish-main li a:visited, ul#superfish-main li span {
+    background: none;
+    border-radius: 0;
+    text-shadow: none;
+    font-weight: 300;
+    color: #fff;
+    padding: 25px 10px;
+    margin: 0;
+    display: block;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+	text-transform:none;
+}
+ul#superfish-main li ul li a, ul#superfish-main li ul li a:visited, ul#superfish-main li ul li span {
+    font-size: 16px;
+}
+ul#superfish-main li ul li span {
+	cursor:default;
+}
+ul#superfish-main li a.is-active,
+ul#superfish-main li a:hover, ul#superfish-main li a:focus, ul#superfish-main li a:active, ul#superfish-main li span:hover {
+    background: none;
+    color: #28aece;
+    border-bottom: 3px solid #28aece;
+}
+/**/
+ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper span.nolink.menuparent:hover,
+#superfish-main .sf-multicolumn li>ol>li.sf-depth-2 a.is-active,
+ul#superfish-main li ul li a:hover,
+ul#superfish-main li ul li a:focus,
+ul#superfish-main li ul li a.is-active {
+	background-color:#fff;
+	color:#3B9EBE;
+}
+ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper a.menuparent, ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper span.nolink.menuparent {
+	color:#fff;
+	font-weight:400;
+}
+#superfish-main .sf-multicolumn li>ol {
+    width: 1400px!important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1a0042;
+    position: absolute;
+    left: -50%;
+    top: 70px;
+    padding: 20px 25px;
+    margin: auto;
+}
+#superfish-main li:nth-child(2) .sf-multicolumn li>ol {
+    left: -50%;
+}
+#superfish-main li:nth-child(3) .sf-multicolumn li>ol {
+	display: block;
+	left:0;
+    width: 230px !important;
+}
+#superfish-main li:nth-child(4) .sf-multicolumn li>ol {
+	display:block;
+	left:0;
+    width: 150px !important;
+}
+#superfish-main .sf-multicolumn li>ol>li.sf-depth-2 {
+    width: 31%!important;
+    margin: 0 1% 0 0;
+}
+#superfish-main li:nth-child(3) .sf-multicolumn li>ol>li.sf-depth-2, #superfish-main li:nth-child(4) .sf-multicolumn li>ol>li.sf-depth-2 {
+	float:none;
+	width:auto !important;
+}
+ul#superfish-main .sf-multicolumn-column {
+    width: 95%!important;
+}
+ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper a.menuparent, ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper span.menuparent,
+#superfish-main .sf-multicolumn li>ol>li.sf-depth-2 a,
+ul.sf-menu span.nolink,
+ul#superfish-main.sf-style-default li.sf-multicolumn-wrapper a {
+	padding:1em 1.5em;
+    color: #fff;
+    margin: 25px 0 18px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    min-height: 35px;
+    border: 1px solid #fff;
+    border-width: 0 0 1px;
+}
+#superfish-main #main-menu-link-contente7704344-b808-41d3-89da-05ec80e9dd5b .sf-multicolumn li > ol > li.sf-depth-2 a {
+	text-transform:none;
+}
+ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper span.nolink.menuparent,
+ul.sf-menu ul li span.nolink,
+#superfish-main .sf-multicolumn li>ol>li.sf-depth-2 a {
+	padding:1em 10% 1em 5%;
+	width:70%;
+}
+ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper span.nolink.menuparent:hover,
+#superfish-main .sf-multicolumn li>ol>li.sf-depth-2 a:hover {
+	color:#1a0042;
+}
+ul#superfish-main.sf-style-default li.sf-multicolumn-wrapper ol ol {
+    display: flex;
+    flex-direction: column;
+    width: 100%!important;
+}
+#superfish-main .sf-multicolumn li>ol li.sf-depth-3 {
+    padding: 0 0 0 5px;
+}
+
+ul#superfish-main.sf-style-default li li li {
+    background: transparent;
+}
+#superfish-main li:nth-child(3) .sf-multicolumn li>ol li.sf-depth-2 a, #superfish-main li:nth-child(4) .sf-multicolumn li>ol li.sf-depth-2 a, #superfish-main .sf-multicolumn li>ol li.sf-depth-3 a {
+    padding: 2px 0 2px 11px;
+    margin: 5px 0;
+    font-weight: 200;
+    text-transform: initial;
+    color: rgba(255, 255, 255, 0.87);
+    min-height: initial;
+    border-width: 0;
+    font-size: 15px;
+    background: url(../images/fleche-menu.png) 0px 4px no-repeat;
+	width:100%;
+}
+#superfish-main .sf-multicolumn li>ol li.sf-depth-3 a:hover {
+	color:#000;
+    background: url(../images/fleche-menu-h.png) 0px 4px no-repeat;
+	text-shadow:1px 1px 2px #fff;
+}
+/**/
+header {
+	background-color:#1a0042;
+	font-family: 'Poppins', sans-serif;
+}
+.region-header {
+	max-width: 1400px;
+    margin: 0 auto;
+}
+#block-asco-theme-branding {
+	float:left;
+	width:350px;
+}
+#block-navigationprincipale {
+    clear: none;
+    width: calc(100% - 400px);
+}
+#block-btheader {
+    margin-bottom:0;
+    width: calc(100% - 400px);
+}
+a, a.link {
+    text-decoration: none;
+    border-bottom: none;
+}
+a.btn {
+	background-color:#28aece;
+	border:1px solid #28aece;
+	color:#fff;
+	padding:10px 30px;
+	text-align:center;
+}
+a.btn:hover {
+	background-color:#fff;
+	color:#28aece;
+}
+h1, h2, h3, h4 {
+	line-height:1.2;
+	text-align:left;
+}
+h2,
+.path-frontpage h1 {
+	font-size:30px;
+}
+h3 {
+	font-size:24px;
+}
+table {
+	font-size:1em;
+}
+.text-formatted ul, .text-formatted ol {
+    margin: 1em 0 1em 1.5em;
+}
+.layout-container {
+    max-width: 100%;
+}
+#block-btheader a {
+    background-color: #28aece;
+    background-image: url(../images/picto_mail.png);
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #28aece;
+    color: #fff;
+    padding: 10px 15px 10px 40px;
+    margin-right: 20px;
+    font-size: 17px;
+}
+#block-btheader .ligne {
+	display:block;
+}
+#block-btheader p {
+    margin: 0 0 11px;
+    text-align: right;
+}
+#block-btheader a:first-of-type {
+    background-color: #191960;
+    border: 1px solid #191960;
+    padding: 10px 15px 10px 40px;
+    background-size: 23px;
+}
+#block-btheader a:nth-of-type(2) {
+    background-image: url(../images/picto_acces.png);
+}
+#block-btheader a:last-of-type {
+	background-color:#191960;
+	background-image:url(../images/picto_rdv-b.png);
+	border:1px solid #191960;
+}
+#block-btheader a:nth-of-type(2):hover,
+#block-btheader a:last-of-type:hover,
+#block-btheader a:hover {
+    background-color: #fff;
+	color:#28aece;
+}
+#block-btheader a:first-of-type:hover,
+#block-btheader a:last-of-type:hover {
+	color:#191960;
+}
+#block-boutonscotee {
+    position: fixed;
+    right: 0;
+    top: 183px;
+    z-index: 90;
+}
+#block-boutonscotee .ligne {
+	display:block;
+	padding:0;
+}
+#block-boutonscotee .field--name-body .ligne p {
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+}
+#block-boutonscotee p {
+	margin-bottom:0;
+}
+#block-boutonscotee a {
+    padding: 10px 15px 10px 50px;
+    color: #fff;
+	font-size:18px;
+    margin: 0;
+    font-weight: 500;
+    transform: translate(130px, 0);
+    -moz-transform: translate(130px, 0);
+    -webkit-transform: translate(130px, 0);
+}
+a.btn.rdv,
+#block-boutonscotee a.rdv {
+    background: #191960 url(../images/picto_rdv-b.png) no-repeat 14px 50%;
+    background-size: 20px;
+}
+a.btn.rdv {
+	border-color:#191960;
+    padding-left: 50px;
+    display: block;
+    width: 260px;
+    margin: 0 auto 60px;
+}
+#block-boutonscotee a.photos {
+    background: #28aece url(../images/picto_photos-b.png) no-repeat 14px 50%;
+    background-size: 20px;
+}
+#block-boutonscotee a.tarifs {
+    background: #28aece url(../images/picto_tarifs-b.png) no-repeat 14px 50%;
+    background-size: 20px;
+}
+a.btn.rdv:hover {
+	background-color:#28aece;
+	color:#fff;
+}
+#block-boutonscotee a.rdv:hover,
+#block-boutonscotee a.photos:hover,
+#block-boutonscotee a.tarifs:hover {
+    transform: translate(0, 0);
+}
+.flexslider {
+    margin: 0;
+    background: transparent;
+    border: none;
+    position: relative;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+.slideshow .flexslider {
+	background-color:transparent;
+    margin: 0;
+    border: 0;
+}
+.flexslider:hover .flex-direction-nav .flex-prev,
+.flexslider:hover .flex-direction-nav .flex-next {
+	display:none;
+	opacity:0;
+}
+.flex-control-nav {
+    bottom: 10px;
+    z-index: 99;
+}
+.flex-control-paging li a {
+	height:15px;
+	width:15px;
+}
+.flex-control-paging li a.flex-active {
+	background-color:#1a0042;
+}
+#block-views-block-slideshow-block-1 {
+	position:relative;
+}
+#block-views-block-slideshow-block-1 .views-field-body {
+	position:absolute;
+	top:150px;
+	left:10%;
+}
+#block-views-block-slideshow-block-1 .views-field-body .field-content div h2 {
+	font-weight:600;
+	margin-top:0;
+}
+#block-views-block-slideshow-block-1 .views-field-body a, .region-actus .view-header a,
+#block-views-block-slideshow-block-1 .views-field-body .field-content div p {
+	font-size:18px;
+	margin-bottom:0;
+}
+#block-views-block-slideshow-block-1 .views-field-body .field-content div {
+	margin-bottom:20px;
+}
+h1 {
+	font-size:44px;
+	font-weight:600;
+}
+.page-title {
+  line-height: 1.3em;
+}
+#block-views-block-slideshow-block-1 .views-field-body .field-content div,
+#titre {
+	border-left:3px solid #28aece;
+	margin-bottom:20px;
+	padding:5px 0 5px 15px;
+}
+.path-frontpage main {
+	display:none;
+}
+.region-docteur {
+	background-attachment:fixed;
+	background-image:url(../images/bg_docteur.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:50px 0;
+}
+.region-docteur h1 {
+    color: #1a0042;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+#titre p {
+	margin-bottom:0;
+}
+#philosophie {
+    background-image: url(../images/dr_papalia.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 350px;
+    padding-left: 350px;
+    padding-top: 120px;
+}
+#philosophie div {
+	background-color:#1a0042;
+	padding:40px 20px 40px 60px;
+}
+#philosophie div h2,
+#philosophie div p {
+	color:#fff;
+}
+#philosophie div h2 {
+	margin-bottom:30px;
+	margin-top:0;
+}
+.path-actualites .views-field-view-node a,
+#block-views-block-slideshow-block-1 .views-field-body a,
+.region-actus .view-footer a, .region-interventions p a, #philosophie a {
+    background-image: url(../images/chevron_bleu.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    display: block;
+	font-weight:500;
+    padding-left: 16px;
+}
+.path-actualites .views-field-view-node a:hover,
+#block-views-block-slideshow-block-1 .views-field-body a:hover,
+.region-actus .view-footer a:hover,
+.region-interventions p a:hover,
+#philosophie a:hover {
+	margin-left:10px;
+}
+#philosophie a:hover {
+	color:#fff;
+    padding-left: 20px;
+}
+.region-interventions {
+	padding:50px 0;
+}
+.region-interventions .ligne {
+	max-width:100%;
+}
+.region-actus h2,
+.region-lieux h2,
+.region-interventions h2 {
+	border-left:1px solid #28aece;
+	padding:5px 0 5px 15px;
+}
+.region-interventions .text-formatted ul {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+    margin: 1em 0;
+    padding: 0;
+}
+.region-interventions ul li {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    width: 24%;
+}
+.region-interventions #block-interventionsmedecine ul li {
+    width: 32%;
+}
+.region-interventions ul li p {
+	opacity:0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -96px;
+    position: absolute;
+}
+.region-interventions ul li h3 {
+    position: absolute;
+    top: -30px;
+    padding-top: 350px;
+    width: 100%;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+.region-interventions ul li:hover h3 {
+    position: relative;
+    top: 100%;
+}
+.region-interventions ul li:hover p {
+	opacity:1;
+}
+.region-interventions ul li a {
+	background-image:url(../images/chevron_bleu.png);
+	background-position:50% 15px;
+	background-repeat:no-repeat;
+	background-size:7px;
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+}
+.region-interventions ul li a.btn {
+    background-image: url(../images/chevron_blanc.png);
+    background-position: 15px 50%;
+    background-size: 11px;
+    padding-left: 30px;
+}
+.region-interventions ul li a.btn:hover {
+    margin: 0 auto;
+    background-image: url(../images/chevron_bleu.png);
+}
+#block-interventionschirurgie {
+	padding-left:50px;
+}
+#block-interventionsmedecine {
+	padding-right:50px;
+}
+#block-interventionschirurgie h3 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#block-interventionsmedecine h3 {
+    background-color: rgba(26, 0, 66, 0.5);
+}
+
+#block-interventionschirurgie ul li:first-child {
+	background-image:url(../images/img_seins.jpg);
+}
+#block-interventionschirurgie ul li:nth-child(2) {
+	background-image:url(../images/img_silhouette.jpg);
+}
+#block-interventionschirurgie ul li:nth-child(3) {
+	background-image:url(../images/img_visage.jpg);
+}
+#block-interventionschirurgie ul li:last-child {
+	background-image:url(../images/img_cutane.jpg);
+}
+#block-interventionsmedecine ul li:first-child {
+	background-image:url(../images/img_acide.jpg);
+}
+#block-interventionsmedecine ul li:nth-child(2) {
+	background-image:url(../images/img_botox.jpg);
+}
+#block-interventionsmedecine ul li:nth-child(3) {
+	background-image:url(../images/img_cryolypolise.jpg);
+}
+#block-interventionsmedecine ul li:last-child {
+	background-image:url(../images/img_radiofrequence.jpg);
+}
+.region-lieux {
+    background-color: #e7e5ea;
+    margin-bottom: 0;
+    padding: 50px 0 80px;
+}
+#img-lieux {
+	background-image:url(../images/cabinet-lyon.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#img-lieux.lyon {
+	background-image:url(../images/cabinet-lyon.jpg);
+}
+#img-lieux.trenel {
+	background-image:url(../images/clinique-trenel.jpg);
+}
+#img-lieux.medipole {
+	background-image:url(../images/medipole.jpg);
+}
+#img-lieux.foie {
+	background-image:url(../images/sainte-foie.jpg);
+}
+.ckeditor-accordion-container > dl {
+    position: relative;
+    border: none;
+}
+.ckeditor-accordion-container > dl dt {
+    background-color: #e7e5ea;
+    padding: 10px 15px;
+}
+.ckeditor-accordion-container > dl dt.active > a, .ckeditor-accordion-container > dl dt.active > a:not(.button),
+.ckeditor-accordion-container > dl dt.active,
+.ckeditor-accordion-container > dl dt.active > a {
+    background-color: #1a0042;
+}
+.ckeditor-accordion-container > dl dt.active > a, .ckeditor-accordion-container > dl dt.active > a:not(.button),
+.ckeditor-accordion-container > dl dt.active > a,
+.region-interventions ul li h3 {
+	border-left:1px solid #fff;
+	color:#fff;
+	padding-left:12px;
+}
+
+.ckeditor-accordion-container > dl dt.active > a {
+	font-size:20px;
+    padding: 10px 0 10px 15px;
+}
+.ckeditor-accordion-container > dl dt > a, .ckeditor-accordion-container > dl dt > a:not(.button), .ckeditor-accordion-container > dl dt > a {
+	border-left:1px solid #28aece;
+    display: block;
+    padding: 10px 0 10px 15px;
+    background-color: transparent;
+    color: #000;
+	font-size:20px;
+	font-weight:600;
+    border-bottom: none;
+	text-align:left;
+}
+.ckeditor-accordion-container > dl dt > a:hover, .ckeditor-accordion-container > dl dt > a:not(.button):hover, .ckeditor-accordion-container > dl dt > a:hover {
+    background-color: #1a0042;
+	color:#fff;
+}
+.ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle:before, .ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle:after {
+	content:none;
+}
+.ckeditor-accordion-container > dl dd {
+    background-color: #1a0042;
+	color:#fff;
+    padding: 15px;
+}
+.ckeditor-accordion-container > dl dt > a:hover, .ckeditor-accordion-container > dl dt > a:not(.button):hover, .ckeditor-accordion-container > dl dd a:hover {
+	color:#fff;
+}
+.ckeditor-accordion-container > dl dd p:last-of-type {
+	margin-bottom:0;
+}
+.path-temoignages .view-temoignages .view-content, .region-actus {
+/*    background-image: url(../images/bg_temoignages.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 50%;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+.region-actus .ligne-titre {
+	display:none;
+}
+/*.region-actus > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+}
+.path-temoignages .view-temoignages .view-content > div {
+	display:block;
+	text-align:center;
+	padding:20px;
+    width: 70%;
+}
+.path-temoignages .view-temoignages .view-content > div:nth-child(odd) {
+	background-color#f2f2f2;
+}
+.node--type-temoignages {
+	padding:50px 0;
+}
+#block-toustemoignages .ligne,
+.node--type-temoignages .ligne {
+	display:block;
+}
+.node--type-temoignages .field--name-field-intervention,
+.path-temoignages .view-temoignages .views-field-field-intervention {
+    color: #1a0042;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.node--type-temoignages .field--name-body p {
+    text-align: center;
+} 
+.path-temoignages .view-temoignages .views-field-view-node a {
+	display:block;
+	font-style:italic;
+	margin-top:10px;
+}
+.region-actus > div .content {
+	width:560px;
+}
+.path-temoignages .view-temoignages .views-field-title a,
+.region-actus p.titre_actus,
+.region-actus .views-field-title a {
+	color:#000;
+	display:block;
+	font-size:20px;
+	font-weight:600;
+}
+.path-temoignages .view-temoignages .views-field-title a {
+	text-align:center;
+}
+.path-temoignages .view-temoignages .views-field-title a,
+.region-actus #block-views-block-actualites-block-1 .views-field-title a {
+	margin-bottom:10px;
+}*/
+.region-actus .views-field-title a {
+	color:#000;
+	display:block;
+	font-size:20px;
+	font-weight:600;
+	height:70px;
+	text-align:left;
+}
+#block-views-block-actualites-block-1 {
+	margin:0 auto;
+	max-width:1400px;
+	padding:50px 30px 90px;
+	width:100%;
+}
+#block-views-block-actualites-block-1 .view-content {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+#block-views-block-actualites-block-1 .views-row {
+	position:relative;
+	width:560px;
+}
+#block-views-block-actualites-block-1 .views-field-field-date-de-publication time {
+	background-color:#28aece;
+	color:#fff;
+	font-size:14px;
+	padding:15px 30px;
+	top:70px;
+	right:0;
+	position:absolute;
+}
+#block-views-block-actualites-block-1 .views-field-body a {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    padding: 20px;
+}
+#block-views-block-actualites-block-1 .view-footer {
+	margin-top: 15px;
+}
+#block-views-block-actualites-block-1 .views-row:hover .views-field-body a {
+    background-color: rgba(26, 0, 66, 0.5);
+}
+
+#block-views-block-temoignages-block-1 {
+	background-image:url(../images/picto_temoignages.html);
+	background-position:150px 50px;
+	background-color:#d9ddde;
+	padding:50px 0 90px;
+}
+#block-views-block-temoignages-block-1 .views-field-body {
+    background-color: #fff;
+    border-left: 10px solid #28aece;
+    margin: 20px 0;
+    padding: 50px 60px 40px 30px;
+}
+.path-temoignages .view-temoignages .view-footer p a,
+#block-views-block-temoignages-block-1 .view-footer p:last-of-type a {
+    background-color: #352f2f;
+    background-image: url(../images/picto_faq.png);
+    background-position: 18px 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #352f2f;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0 15px 70px;
+}
+.path-temoignages .view-temoignages .view-footer p a {
+    margin: 50px auto;
+    width: 240px;
+}
+.path-temoignages .view-temoignages .view-footer p a:hover,
+#block-views-block-temoignages-block-1 .view-footer p:last-of-type a:hover {
+	background-color:#fff;
+	background-image:url(../images/picto_faq-h.png);
+	color:#352f2f;
+}
+.region-footerok {
+    background-color: #28aece;
+	clear:both;
+    position: relative;
+}
+.region-footerok h2 {
+	color:#fff;
+	font-size:22px;
+	font-weight:600;
+}
+.region-footerok h3 {
+	color:#fff;
+	font-size:18px;
+	font-weight:600;
+}
+.region-footerok p {
+  color: #fff;
+  text-align: left;
+}
+.region-footerok a {
+	background-image:url(../images/picto_mail.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	color:#fff;
+	font-weight:600;
+	padding:5px 0 5px 40px;
+}
+.region-footerok a:hover {
+	padding:5px 0 5px 50px;
+}
+#logo-footer {
+    background-image: url(../images/logo-footer.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 203px;
+    left: 5%;
+    position: absolute;
+    bottom: 0;
+    width: 65px;
+    background-size: 100%;
+    z-index: 999;
+}
+.region-footerbas {
+	background-color:#352f2f;
+	padding-top:10px;
+}
+.region-footerbas p {
+	margin-bottom:10px;
+}
+.region-footerbas a {
+	color:#fff;
+}
+.region-footerbas a:hover {
+	color:#ccc;
+}
+/*---------- Interventions --------------*/
+.region-breadcrumb {
+	position:relative;
+	top:170px;
+}
+#block-asco-theme-breadcrumbs {
+    bottom: 0;
+    font-style: italic;
+    position: relative;
+    margin: 20px auto 40px;
+    max-width: 1400px;
+    text-align: center;
+}
+#block-asco-theme-page-title {
+    padding: 40px 20px 80px;
+    max-width: 100%;
+    background-color: #f2f2f2;
+}
+#block-asco-theme-page-title h1 {
+	color:#28aece;
+	text-align:center;
+}
+.bloc_pathologies {
+	clear:both;
+	max-width:1400px;
+	margin:0 auto;
+}
+.bloc_pathologies#bloc1 {
+	display:flex;
+}
+.bloc_pathologies#bloc2 {
+	background-attachment:fixed;
+    background-image: url(../images/bg_docteur.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    max-width: 100%;
+    padding: 50px 30px 30px;
+}
+.bloc_pathologies#bloc3 {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding:30px 0;
+}
+.bloc_pathologies .ligne {
+    display: block;
+    margin: auto;
+    position: sticky;
+    top: 150px;
+}
+#bloc3 > .field--name-body,
+#bloc1 > .field--name-body {
+	display:flex;
+}
+#bloc1 > .field--name-body {
+    float: left;
+    margin-right: 2em;
+    width: 970px;
+}
+#bloc2.bloc_pathologies .field {
+	width:45%;
+}
+#bloc2.bloc_pathologies .field.field--name-field-bloc-sur-fond-image {
+	display:flex;
+}
+#bloc2.bloc_pathologies .field  > div > div {
+	margin:auto;
+}
+#bloc3 > .field > div,
+#bloc1 > .field > div {
+	margin:auto;
+}
+#bloc1 > .field > div h2:first-of-type {
+	margin-top:0;
+}
+.bloc_pathologies .field--name-field-bloc-rdv {
+    background-color: #28aece;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 350px;
+}
+#block-partelephone .ligne,
+.bloc_pathologies .field--name-field-bloc-rdv .ligne {
+	padding:0;
+}
+#block-partelephone h2,
+.bloc_pathologies .field--name-field-bloc-rdv h2 {
+    color: #fff;
+    text-align: center;
+}
+#block-partelephone h2,
+.bloc_pathologies .field--name-field-bloc-rdv h2 {
+	font-size:1.7em;
+	margin-top:0;
+}
+.bloc_pathologies .field--name-field-bloc-rdv .text-formatted ul {
+/*	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;*/
+	margin:0;
+	padding:0;
+}
+.bloc_pathologies .field--name-field-bloc-rdv .text-formatted ul li {
+	list-style:none;
+}
+#block-partelephone a,
+.bloc_pathologies .field--name-field-bloc-rdv a {
+	color:#1a0042;
+}
+#block-partelephone a:hover,
+.bloc_pathologies .field--name-field-bloc-rdv a:hover {
+	color:#fff;
+}
+#block-partelephone a.acces, .bloc_pathologies .field--name-field-bloc-rdv a.acces {
+  background-image: url(../images/picto_acces-b.png);
+  background-position: 10px 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: block;
+  padding: 10px 15px 10px 40px;
+  max-width: 225px;
+  margin: 0 auto;
+}
+#block-partelephone a.acces, .bloc_pathologies .field--name-field-bloc-rdv a.acces:hover {
+    background-image: url(../images/picto_acces.png);
+	color:#1a0042;
+}
+.bloc_pathologies .field--name-field-bloc-rdv a.btn {
+    background: #1a0042;
+	color:#fff;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0;
+    margin: 10px 0 30px;
+    border: 1px solid #1a0042;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.bloc_pathologies .field--name-field-bloc-rdv a.btn span {
+	display:block;
+}
+.bloc_pathologies .field--name-field-bloc-rdv a.btn:hover {
+    background: #fff;
+    color: #1a0042;
+}
+.bloc_pathologies .field--name-field-bloc-rdv p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bloc_pathologies .field--name-field-bloc-bas {
+	display:flex;
+    width: 950px;
+}
+.bloc_pathologies .field--name-field-menu-bas {
+    background-color: #f2f2f2;
+    background-image: url(../images/fond_menu.png);
+    background-position: 80% 470px;
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 360px;
+}
+.page-node-124 .bloc_pathologies .field--name-field-menu-bas,
+.page-node-120 .bloc_pathologies .field--name-field-menu-bas,
+.page-node-121 .bloc_pathologies .field--name-field-menu-bas,
+.page-node-122 .bloc_pathologies .field--name-field-menu-bas {
+	background-color:#1a0042;
+	color:#fff;
+}
+.bloc_pathologies .field--name-field-menu-bas h2 {
+	color:#28aece;
+	font-size:24px;
+	line-height:1.2em;
+	margin-top:0;
+	text-align:center;
+}
+.bloc_pathologies .field--name-field-menu-bas .text-formatted ul {
+	margin-bottom:0;
+	padding:0;
+}
+.bloc_pathologies .field--name-field-menu-bas li {
+	list-style:none;
+}
+.bloc_pathologies .field--name-field-menu-bas li a {
+    background-image: url(../images/chevron_bleu.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    color: #000;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+.page-node-124 .bloc_pathologies .field--name-field-menu-bas li a,
+.page-node-121 .bloc_pathologies .field--name-field-menu-bas li a,
+.page-node-122 .bloc_pathologies .field--name-field-menu-bas li a{
+	color:#fff;
+}
+.bloc_pathologies .field--name-field-menu-bas li a:hover {
+	color:#28aece;
+}
+.page-node-6 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-13 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-17 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-20 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-26 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-31 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-36 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-39 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-43 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-48 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-53 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-57 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-61 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-64 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-68 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-73 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-77 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-81 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-86 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-90 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-95 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-98 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-103 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-106 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-111 .bloc_pathologies .field--name-field-menu-bas li:first-child a,
+.page-node-7 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-14 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-18 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-21 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-27 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-32 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-37 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-40 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-44 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-49 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-54 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-58 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-62 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-65 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-69 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-74 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-78 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-82 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-87 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-91 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-96 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-99 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-104 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-107 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-112 .bloc_pathologies .field--name-field-menu-bas li:nth-child(2) a,
+.page-node-8 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-15 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-23 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-28 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-33 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-41 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-45 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-50 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-55 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-59 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-66 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-70 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-75 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-79 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-83 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-88 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-92 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-100 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-108 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-113 .bloc_pathologies .field--name-field-menu-bas li:nth-child(3) a,
+.page-node-9 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-24 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-29 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-34 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-46 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-51 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-71 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-84 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-93 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-101 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-109 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-10 .bloc_pathologies .field--name-field-menu-bas li:nth-child(5) a,
+.page-node-11 .bloc_pathologies .field--name-field-menu-bas li:nth-child(6) a,
+.page-node-12 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-16 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-19 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-25 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-30 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-35 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-38 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-42 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-47 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-52 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-56 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-60 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-63 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-67 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-72 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-76 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-80 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-85 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-89 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a,
+.page-node-94 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-97 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-102 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-105 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-110 .bloc_pathologies .field--name-field-menu-bas li:nth-child(5) a,
+.page-node-150 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-146 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-147 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-149 .bloc_pathologies .field--name-field-menu-bas li:last-child a,
+.page-node-114 .bloc_pathologies .field--name-field-menu-bas li:nth-child(4) a {
+	color:#28aece;
+}
+#cabinet, #medipole, #foy, #trenel {
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-bottom:30px;
+}
+#cabinet a, #medipole a, #foy a, #trenel a {
+	color:#fff;
+}
+#cabinet .margin, #medipole .margin, #foy .margin, #trenel .margin {
+	padding:20px;
+}
+#cabinet {
+	background-image:url(../images/lieux-cabinet.jpg);
+}
+#medipole {
+	background-image:url(../images/lieux-medipole.jpg);
+}
+#foy {
+	background-image:url(../images/lieux-foy.jpg);
+}
+#trenel {
+	background-image:url(../images/lieux-trenel.jpg);
+}
+.path-frontpage #cabinet,
+.path-frontpage #medipole,
+.path-frontpage #foy,
+.path-frontpage #trenel {
+	background-image:none;
+	margin-bottom:0;
+}
+#cabinet p, #medipole p, #foy p, #trenel p,
+#cabinet h2, #medipole h2, #foy h2, #trenel h2 {
+	color:#fff;
+	margin-top:0;
+}
+/* Contact */
+input.form-text:focus, input.form-tel:focus, input.form-email:focus, input.form-url:focus,
+input.form-search:focus, input.form-file:focus, input.form-number:focus, input.form-color:focus, textarea.form-textarea:focus,
+select:focus {
+	outline:none;
+}
+input.form-text, input.form-tel, input.form-email, input.form-url, input.form-search, input.form-file, input.form-number, input.form-color, textarea.form-textarea {
+	width:100%;
+}
+#block-webform .webform-submission-form {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+#block-webform .webform-submission-form .form-item,
+#block-webform .webform-submission-form .form-actions {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#block-webform .webform-submission-form .field--type-string-long,
+#block-webform .webform-submission-form .field--type-email,
+#block-webform .webform-submission-form .field--type-string {
+	width:45%;
+}
+#block-webform .webform-submission-form .field--type-string-long label,
+#block-webform .webform-submission-form .field--type-email label,
+#block-webform .webform-submission-form .field--type-string label {
+	display:none;
+}
+#block-webform .webform-submission-form .field--type-email input,
+#block-webform .webform-submission-form .field--type-string input {
+	border:none;
+	color:#000;
+	width:100%;
+}
+#captcha {
+	border:none;
+	float:right;
+	width:45%;
+}
+.g-recaptcha {
+	float:right;
+}
+#node-proposition-de-don-form #captcha .details-description,
+#node-proposition-de-don-form summary {
+	display:none;
+}
+.form-composite > .fieldset-wrapper > .description, .form-item .description {
+    font-size: 1em;
+}
+#block-webform .webform-submission-form input.form-submit {
+    background-color: #1a0042;
+    background-image: none;
+    border: 1px solid #1a0042;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+}
+#block-webform .webform-submission-form input.form-submit:hover {
+	background-color:#fff;
+	color:#1a0042;
+}
+/* Photos */
+table.photos {
+	font-family:'Poppins', sans-serif;
+	margin-bottom:30px;
+}
+table.photos tr {
+    padding: 0.1em 0.6em;
+/*    border-bottom: 1px dotted #1a0042;*/
+border-bottom:0;
+    background: transparent;
+}
+table.photos tr td {
+	border:none;
+	text-align:center;
+	vertical-align:middle;
+}
+table.photos tr td p {
+	margin-bottom:0;
+}
+table.photos tr td img {
+	display:block;
+	margin:0 auto;
+}
+/* Actualités */
+.page-node-type-actualites .node__content {
+	margin:0 auto;
+	max-width:1400px;
+}
+.page-node-type-actualites .region-actus {
+	padding:30px 0 50px;
+}
+.page-node-type-actualites .node__content .ligne {
+	display:block;
+}
+.page-node-type-actualites .field--name-field-date-de-publication {
+    background-color: #1a0042;
+    color: #fff;
+    font-style: italic;
+    margin-bottom: 30px;
+    padding: 5px;
+    text-align: center;
+    width: 140px;
+}
+.page-node-type-actualites .node .field--type-image {
+    float: none;
+    margin: 0;
+}
+.page-node-type-actualites .node .field--type-image img {
+	float:right;
+	margin-left:2em;
+}
+.path-actualites .view-actualites {
+    margin: 50px auto;
+    max-width: 1400px;
+    padding: 0 30px;
+}
+.path-actualites .view-actualites .view-content {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+.path-actualites .view-actualites .view-content > div {
+	background-color:#f2f2f2;
+	margin-bottom:30px;
+	padding:20px;
+	position:relative;
+	width:560px;
+}
+.path-actualites .views-field-field-date-de-publication time {
+	background-color: #28aece;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 30px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.path-actualites .views-field-title a {
+	display:block;
+	font-size:20px;
+	font-weight:600;
+	margin:10px 0;
+}
+.path-actualites .views-field-body a {
+	color:#000;
+	display:block;
+	margin-bottom:10px;
+}
+.page-node-124 tr td:last-child {
+	text-align:center;
+	width:120px;
+}
+#block-partelephone,
+#block-webform {
+	float:left;
+	padding-left:5%;
+	padding-right:2.5%;
+	width:52.5%;
+}
+#block-webform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+#block-webform .js-form-item {
+	margin-bottom:10px;
+	width:45%;
+}
+#block-webform .js-form-item#edit-texte-rgpd,
+#block-webform .js-form-item.js-form-type-checkbox,
+#block-webform .js-form-item.js-form-type-textarea,
+#block-webform .js-form-item#edit-processed-text {
+	width:100%;
+}
+#block-webform input[type="checkbox"], #block-webform  input[type="radio"] {
+	float:left;
+}
+#block-partelephone {
+    background-color: #28aece;
+    float: right;
+    margin-top: 70px;
+    padding: 40px 5% 30px 2.5%;
+    text-align: center;
+	width:32.5%;
+}
+#block-partelephone .ligne {
+	display:block;
+}
+#block-partelephone h3,
+#block-partelephone p,
+#block-partelephone a {
+	color:#fff;
+	text-align:center;
+}
+a.btn.photos {
+    background-image: url(../images/picto_photo_FFFFFF.svg);
+    background-position: 17px 50%;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    display: inline-block;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+a.btn.photos:hover {
+	background-image:url(../images/picto_photo_FFFFFF.png);
+}
+/*RESPONSIVE*/
+
+@media all and (max-width: 1700px) {
+#block-footer {
+	padding-left:120px;
+}
+#logo-footer {
+	left:30px;
+}
+
+}
+
+@media all and (max-width: 1600px) {
+main {
+	padding-bottom:70px;
+}
+}
+@media all and (max-width: 1400px) {
+#superfish-main .sf-multicolumn li > ol {
+	width:1100px !important;
+}
+#superfish-main li:nth-child(2) .sf-multicolumn li > ol {
+    left: -34%;
+}
+#superfish-main li:nth-child(3) .sf-multicolumn li > ol {
+    left: -590px;
+}
+#superfish-main li:nth-child(4) .sf-multicolumn li > ol {
+    left: -770px;
+}
+ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper ol, ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper ol li {
+    width: 100% !important;
+}
+.bloc_pathologies .field--name-field-bloc-bas {
+    display: flex;
+    width: calc(100% - 400px);
+}
+}
+@media all and (max-width: 1300px) {
+.path-actualites .view-actualites .view-content > div {
+    max-width: 45%;
+    width: 100%;
+}
+}
+@media all and (max-width: 1200px) {
+#block-views-block-slideshow-block-1 .views-field-body {
+	top:100px;
+}
+.region-interventions ul li h3 {
+	font-size:18px;
+}
+.region-interventions ul li p {
+    margin-left: -78px;
+}
+.region-interventions ul li p a {
+	max-width:130px;
+	width:100%;
+}
+.region-actus > div#block-views-block-actualites-block-1,
+.region-actus > div#block-views-block-temoignages-block-1 {
+	padding:50px 2.5% 90px;
+}
+#block-views-block-actualites-block-1 .views-row {
+	margin:0 auto 50px;
+}
+}
+
+@media all and (max-width: 1100px) {
+/*grille*/
+.ligne{
+	justify-content: space-around;
+	flex-wrap:wrap;
+}
+
+.colonne_1-1,
+.colonne_1-2,
+.colonne_1-3,
+.colonne_2-3,
+.colonne_1-4,
+.colonne_1-5,
+.colonne_2-5,
+.colonne_3-5,
+.colonne_4-5{
+	width:97.22%;
+}
+.flex {
+	display:block;
+}
+#block-interventionschirurgie {
+	padding-left:0;
+}
+#block-interventionsmedecine {
+	padding-right:0;
+}
+#img-lieux {
+	display:none;
+}
+.region-actus {
+	display:block;
+}
+.region-actus > div,
+.region-actus > div#block-views-block-actualites-block-1,
+.region-actus > div#block-views-block-temoignages-block-1 {
+	padding:30px;
+	width:auto;
+}
+#block-navigationprincipale {
+    width: auto;
+    margin: 0;
+    top: 70px;
+    position: absolute;
+    right: 20px;
+    width: calc(100% - 40px);
+}
+ul#superfish-main {
+    font-size: 1em;
+}
+div.sf-accordion-toggle.sf-style-white a {
+    background: transparent;
+    border: none;
+    color: transparent;
+    display: inline-block;
+	float:right;
+    font-weight: bold;
+    padding: 0;
+    position: relative;
+}
+div.sf-accordion-toggle.sf-style-white > a::after {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 400;
+}
+div.sf-accordion-toggle.sf-style-white a.sf-expanded, ul.sf-menu.sf-style-white.sf-accordion li.sf-expanded {
+    background: transparent;
+    width: 100%;
+    padding: 0;
+}
+ul.sf-menu.sf-accordion.sf-expanded {
+	top:10px !important;
+}
+ul.sf-menu.sf-style-white li, ul.sf-menu.sf-style-white.sf-navbar {
+	text-align:left;
+}
+ul.sf-menu.sf-style-white a, ul.sf-menu.sf-style-white a:visited, ul.sf-menu.sf-style-white span.nolink {
+    border: 0 none;
+	border-radius:0;
+	border-bottom:1px solid #3f1a45;
+    color: #555;
+	font-size:1em;
+	margin:0;
+    padding: 1em 2em;
+	text-transform:uppercase;
+	text-shadow:none;
+}
+#superfish-main .sf-multicolumn li > ol > li.sf-depth-2 a, ul.sf-menu span.nolink, ul#superfish-main.sf-style-default li.sf-multicolumn-wrapper a {
+	min-height:10px;
+}
+ul.sf-menu.sf-style-white.sf-accordion li li a, ul.sf-menu.sf-style-white.sf-accordion li li span.nolink {
+	background-color:#1a0042;
+	color:#fff;
+	padding-left:3em;
+}
+ul.sf-menu.sf-style-white.sf-accordion li ul li ul li a, ul.sf-menu.sf-style-white.sf-accordion li ul li ul li span.nolink {
+	background-color:#fff;
+	color:#1a0042;
+	padding-left:4em;
+	text-transform:none;
+}
+span.menuparent,
+.region-primary-menu .menu a.menuparent,
+.region-primary-menu .menu span.menuparent,
+a.menuparent {
+	background-color:#fff;
+	background-image:url(../images/plus_menu.png);
+	background-position:85% 50%;
+	background-repeat:no-repeat;
+}
+ul.sf-menu.sf-style-white a:hover {
+	background-position:95% 50%;
+	background-repeat:no-repeat;
+}
+.region-primary-menu .menu li li span.menuparent,
+.region-primary-menu .menu li li a.menuparent {
+    background-image: url(../images/plus_menu-b.png);
+    background-position: 95% 50%;
+	background-repeat:no-repeat;
+}
+ul.sf-menu.sf-style-white li.active-trail a {
+	color:#3f1a45;
+}
+.bloc_pathologies .field--name-field-bloc-bas,
+#bloc2.bloc_pathologies .field,
+.bloc_pathologies#bloc3,
+.bloc_pathologies#bloc2,
+.bloc_pathologies#bloc1 {
+    display: block;
+}
+#bloc1 > .field--name-body {
+    float: none;
+    margin-right: 0;
+	padding:0 30px;
+    width: auto;
+}
+.bloc_pathologies .field--name-field-bloc-rdv {
+	clear:both;
+	margin:10px auto 30px;
+}
+img.align-right,
+img.align-left,
+.bloc_pathologies#bloc2 img {
+	display:block;
+	float:none;
+	margin:0 auto 10px;
+}
+.bloc_pathologies .field--name-field-bloc-bas,
+#bloc2.bloc_pathologies .field {
+	width:auto;
+}
+.bloc_pathologies#bloc3 {
+	padding:30px;
+}
+.bloc_pathologies .field--name-field-menu-bas {
+    margin: 30px auto;
+}
+main {
+	padding-bottom:0;
+}
+.page-node-123 iframe {
+	height:250px !important;
+}
+.field--name-field-menu-bas img {
+	display:none;
+}
+.page-node-120 .field--name-field-menu-bas img {
+    display: block;
+}
+.page-node-123 .colonne_1-2 {
+	margin-bottom:30px;
+}
+#cabinet.colonne_1-2, #medipole.colonne_1-2, #foy.colonne_1-2, #trenel.colonne_1-2 {
+	margin-bottom:0;
+}
+.bloc_pathologies .ligne {
+	position:relative;
+}
+}
+
+@media all and (max-width: 991px) {
+/*.region-slideshow {
+	overflow:hidden;
+}
+#block-views-block-slideshow-block-1 img {
+	left:50%;
+	margin-left:-496px;
+	position:relative;
+	width:992px;
+}*/
+#block-views-block-slideshow-block-1 .views-field-body {
+    top: 20px;
+    left: 5%;
+}
+.region-interventions #block-interventionsmedecine ul li,
+.region-interventions ul li {
+	margin-bottom:20px;
+	width:48%;
+}
+.path-actualites .view-actualites .view-content > div {
+    max-width: 100%;
+    width: 560px;
+    margin: 0 auto 30px;
+}
+.align-right,
+.align-left,
+.page-node-type-actualites .node .field--type-image img {
+	display:block;
+    float: none;
+	margin:0 auto 10px;
+}
+.path-temoignages .view-temoignages .view-content > div {
+	width:calc(100% - 40px);
+}
+.node--type-temoignages {
+	padding:0;
+}
+#block-partelephone, #block-webform {
+    float: none;
+    margin: 0 auto 30px;
+    padding: 0 15px;
+    width: auto;
+    display: block;
+}
+#block-partelephone {
+	padding:15px;
+}
+#block-btheader {
+    margin-bottom: 0;
+    width: 100%;
+}
+#block-btheader p {
+    text-align: center;
+}
+.field--name-field-menu-bas .ligne {
+	padding:0;
+}
+}
+
+@media all and (max-width: 850px) {
+#block-asco-theme-branding {
+    width: 250px;
+}
+#block-btheader {
+    margin-bottom: 0;
+}
+}
+@media all and (min-width: 851px) {
+
+}
+
+
+@media all and (max-width: 768px) {
+body {
+	font-size:15px;
+	text-align:justify;
+}
+h2, h3, h4, h5, h6 {
+	text-align:left;
+}
+.page-title {
+    font-size: 1.8em;
+}
+h2, .path-frontpage h1 {
+    font-size: 24px;
+}
+h3 {
+	font-size:20px;
+}
+.bloc_pathologies .field--name-field-bloc-rdv h2 {
+    font-size: 1.4em;
+}
+.bloc_pathologies .field--name-field-bloc-rdv a.btn {
+	padding:10px 0;
+	font-size:1em;
+}
+.node__content {
+    font-size: 1em;
+}
+.text-formatted ul, .text-formatted ol {
+    margin: 1em 0 1em 1em;
+}
+#block-asco-theme-branding {
+	float:none;
+	margin-bottom:20px;
+}
+#block-btheader {
+    margin: 0 auto;
+    width: auto;
+    float: none;
+    clear: both;
+}
+#block-btheader a {
+    padding: 5px 15px 5px 40px;
+    margin-right: 0;
+    font-size: 15px;
+}
+#block-btheader a:first-of-type {
+	padding:5px 15px 5px 40px;
+}
+#block-views-block-slideshow-block-1 .views-field-body {
+    top: auto;
+    left: 15px;
+    position: relative;
+    margin-top: 15px;
+}
+#philosophie {
+    background-position: top center;
+    padding-left: 0;
+    padding-top: 350px;
+}
+.region-interventions #block-interventionsmedecine ul li,
+.region-interventions ul li {
+	width:100%;
+}
+.path-actualites .view-actualites .view-content > div {
+	width:auto;
+}
+.page-node-124 tr td,
+.page-node-124 tr td:last-child,
+table.photos tr td {
+	display:block;
+	width:auto !important;
+}
+#block-views-block-actualites-block-1 .views-row {
+	width:auto;
+}
+.region-actus .views-field-title a {
+	font-size:18px;
+}
+ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper a.menuparent, ul.sf-menu.sf-style-white li.sf-multicolumn-wrapper span.menuparent, #superfish-main .sf-multicolumn li > ol > li.sf-depth-2 a, ul.sf-menu span.nolink, ul#superfish-main.sf-style-default li.sf-multicolumn-wrapper a {
+	width:auto;
+}
+#sliding-popup .popup-content {
+	display:block;
+}
+#sliding-popup .popup-content #popup-text {
+margin: 0 auto 10px;
+}
+#sliding-popup .popup-content #popup-buttons {
+	text-align:center;
+}
+.flexslider {
+  padding-bottom: 40px;
+}
+#block-views-block-slideshow-block-1 .views-field-body a {
+  margin-left: 20px;
+  font-size: 16px;
+}
+#philosophie div {
+  padding: 30px;
+}
+#block-views-block-slideshow-block-1 .views-field-body .field-content div, #titre {
+    padding: 15px;
+}
+#block-views-block-actualites-block-1 .view-footer {
+  margin-top: 0;
+}
+.ckeditor-accordion-container > dl dt > a, .ckeditor-accordion-container > dl dt > a:not(.button), .ckeditor-accordion-container > dl dt > a {
+  font-size: 18px;
+}
+}
+
+
+@media all and (min-width: 560px){
+	
+}
+
+
+@media all and (max-width: 460px) {
+#block-boutonscotee {
+	display:none;
+}
+#bloc1 > .field--name-body {
+	padding:0;
+}
+.bloc_pathologies .field--name-field-menu-bas,
+.bloc_pathologies .field--name-field-bloc-rdv {
+    padding: 20px 10px;
+    width: auto;
+}
+.bloc_pathologies#bloc2 {
+    padding: 30px 0 10px;
+}
+.bloc_pathologies#bloc3 {
+	padding:30px 0;
+}
+a.btn.rdv {
+	max-width:260px;
+	width:auto;
+}
+#block-footer {
+    padding-left: 55px;
+}
+#logo-footer {
+    height: 153px;
+    left: 10px;
+    width: 45px;
+}
+#block-asco-theme-page-title {
+    padding: 20px 15px 40px;
+}
+#block-btheader {
+	width:190px;
+}
+#block-asco-theme-breadcrumbs {
+	margin:20px auto;
+}
+#block-btheader a {
+    display: block;
+    text-align: left;
+}
+#block-views-block-slideshow-block-1 .views-field-body {
+    left: 0;
+}
+#block-views-block-actualites-block-1 .views-field-body a {
+	position:relative;
+}
+#block-webform .js-form-item {
+	width:100%;
+}
+}
+@media all and (max-width: 380px) {
+#block-asco-theme-branding {
+	width: calc(100% - 60px);
+}
+#block-btheader a {
+	display:block;
+}
+}
+/* INFORMATION Pour le twig"*/
+
+#information{
+	position:fixed;
+	bottom:20px;
+	left:0;
+	min-width:200px;
+	background:#fff;
+	padding:10px;
+	border:1px solid #ddd;
+	z-index:200;
+}

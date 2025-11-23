@@ -1,0 +1,8 @@
+https://www.esthetique-lyon-chirurgie.com -O ./esthetique-site -w -c4 -%! -%k -I -v
+File generated automatically on Sun, 23 Nov 2025 17:13:46, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+
